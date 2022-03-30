@@ -2,7 +2,7 @@ package Les_2_Generics;
 
 import java.util.ArrayList;
 
-public class Example_3_Parameterized_method {
+public class Example_4_Parameterized_method {
     public static void main(String[] args) {
         ArrayList<Integer> al1 = new ArrayList<>();
         al1.add(10);
