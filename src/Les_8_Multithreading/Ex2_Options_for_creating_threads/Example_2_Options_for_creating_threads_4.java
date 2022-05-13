@@ -16,7 +16,7 @@ public class Example_2_Options_for_creating_threads_4 {
 
         //2 вариант
         //Так как Runnable это функциональный интерфейс то в параметре класса Thread можно использовать
-        //лямбда выражение.
+        //лямбда выражение для описания метода run() и его запуска с помощью метода start().
         new Thread(() -> System.out.println("hello")).start();
     }
 
