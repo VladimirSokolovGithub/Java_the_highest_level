@@ -11,7 +11,7 @@ public class Example_1_RunnableFactorial {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         Factorial factorial = new Factorial(5);
-//        executorService.execute(factorial);
+        executorService.execute(factorial);
 
         //метод submit() -
         //метод submit() мы можем использовать когда мы работаем с Runnable тоже.
@@ -22,7 +22,8 @@ public class Example_1_RunnableFactorial {
         //Возникает вопрос для чего нам использовать Future и метод submit() совместно с Runnable?
         // С его помощью мы можем делать cancel нашего task-а, или узнавать закончилась ли его работа
         // с помощью isDone().
-        Future future = executorService.submit(factorial);
+
+//        Future future = executorService.submit(factorial);
 
         executorService.shutdown();
 
@@ -31,8 +32,8 @@ public class Example_1_RunnableFactorial {
         // наш метод run(), иначе поток Main сразу выведет ноль и программа завершит свою работу.
         executorService.awaitTermination(10, TimeUnit.SECONDS);
 
-        System.out.println(future.get()); //Убедимся что get() вернёт Null.
-        System.out.println(future.isDone()); //Убедимся что get() вернёт Null.
+//        System.out.println(future.get()); //Убедимся что get() вернёт Null.
+//        System.out.println(future.isDone()); //Убедимся что get() вернёт Null.
 
         System.out.println(factorialResult);
     }
