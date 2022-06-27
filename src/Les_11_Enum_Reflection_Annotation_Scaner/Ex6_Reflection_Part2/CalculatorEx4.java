@@ -1,4 +1,4 @@
-package Les_11_Enum_Reflection_Annotation_Scaner.Reflection_Part2;
+package Les_11_Enum_Reflection_Annotation_Scaner.Ex6_Reflection_Part2;
 
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;

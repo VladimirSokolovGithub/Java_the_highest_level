@@ -1,4 +1,4 @@
-package Les_11_Enum_Reflection_Annotation_Scaner.Reflection_Part2;
+package Les_11_Enum_Reflection_Annotation_Scaner.Ex6_Reflection_Part2;
 
 
 //Поговорим как с помощью Reflection можно создать объекты и вызвать на них методы.
